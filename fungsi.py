@@ -15,6 +15,7 @@ data_augmentation = tf.keras.Sequential([
 
 def make_model():
   n_classes = 4
+  BATCH_SIZE = 32
   input_shape = (BATCH_SIZE,150,150,3)
   model = models.Sequential([
     resize_and_rescale,
